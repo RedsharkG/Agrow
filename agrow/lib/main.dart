@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'landing_page.dart'; // Import your second screen
+import 'screens/landing_page.dart'; // Assuming you saved the previous code in a file named 'landing_page.dart'
 
 void main() {
   runApp(const MyApp());
@@ -11,30 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: const FirstScreen(),
-    );
-  }
-}
-
-class FirstScreen extends StatelessWidget {
-  const FirstScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('First Screen')),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => const LandingPage()),
-            );
-          },
-          child: const Text('Go to Second Screen'),
-        ),
+      title: 'Agrow App', // Your app's title
+      theme: ThemeData(
+        primarySwatch: Colors.teal, // You can customize your theme
       ),
+      home: LandingPage(), // Set the LandingPage as the home screen
     );
   }
 }
