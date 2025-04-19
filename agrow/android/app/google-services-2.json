@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1045102689347",
+    "project_id": "agrow-32fd7",
+    "storage_bucket": "agrow-32fd7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045102689347:android:d63af24cbbeb0cc49728f6",
+        "android_client_info": {
+          "package_name": "com.example.agrow"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWJzj6VMEtgQQ9ipvhrDkawo2yd3JJiXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

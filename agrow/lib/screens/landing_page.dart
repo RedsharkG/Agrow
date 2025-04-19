@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'register_page.dart';
+import 'login_page.dart'; // Import the login_page.dart file
 
 class LandingPage extends StatelessWidget {
   const LandingPage({Key? key}) : super(key: key);
@@ -66,7 +67,12 @@ class LandingPage extends StatelessWidget {
                       elevation: 4,
                     ),
                     onPressed: () {
-                      Navigator.pushNamed(context, '/login');
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const LoginPage(),
+                        ),
+                      );
                     },
                     child: const Text(
                       "LOGIN",
